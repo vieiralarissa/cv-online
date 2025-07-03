@@ -1,0 +1,188 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*estilo geral da pagina*/
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 80px; 
+}
+
+/* Cabeçalho fixo no topo e menu */
+header {
+  height: auto;
+  background-color: #a06e6e;
+  color: #fff;
+  padding: 12px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+/*estilo do titulo*/
+header h1 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  letter-spacing: 2px;
+  flex-wrap: wrap;
+}
+/*menu de navegação*/
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+/*links do menu*/
+ nav ul li a {
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+ }
+
+/*responsividade do cabeçalho em telas pequenas*/
+@media (max-width: 500px) {
+  nav ul {
+    padding-left: 0;
+    gap: 6px;
+    font-size: 14px;
+  }
+  header h1{
+    font-size: 16px;
+    margin-bottom: 6px;
+    letter-spacing: 1px;
+  }
+}
+/*estilo dos links*/
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  color: #e35a5a;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  transform: scale(1.05);
+}
+
+/*estilo da seção principal*/
+main {
+  max-width: none ;
+  width: 100%;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+/*estilo do perfil*/
+.foto-perfil {
+  width: 180px;            
+  height: 180px;       
+  border-radius: 50%;
+  object-fit: cover; 
+  display: block;
+  margin: 20px auto;     
+  box-shadow: 0 0 15px #8e8d8d;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea, button {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  width: 100%;
+  max-width: 400px;
+  margin: 0% auto;
+  
+}
+/*estilo do botao*/
+button {
+  cursor: pointer;
+  width: 100%;
+  max-width: 100px;
+  padding: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #e35a5a;
+  color: #ffffff;
+}
+button:hover{
+  transform: scale(1.05);
+}
+
+.links a{ 
+  color: #007BFF;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.links :hover{
+  color: #0056b3;
+  transform: scale(1.05);
+}
+
+.certificado {
+  color: #007BFF;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.certificado:hover{
+  color: #0056b3;
+  transform: scale(1.05);
+}
+ul {
+  list-style-type: none;
+  padding-left: 20px; 
+  margin-left: 0; 
+}
+
+li {
+  margin-left: 0; 
+  padding-left: 0;
+  list-style-position: inside; 
+  text-align: center;
+}
+
+
+/* Rodapé */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+  padding: 6px 0;
+  margin-top: 40px;
+  background-color: #ffffff;
+  color: #303030;
+  font-size: 13px;
+}
+
